@@ -1,0 +1,43 @@
+<!-- exercicio 5 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        class Aluno {
+            constructor(nome, idade, peso) {
+                this.nome = nome;
+                this.idade = idade;
+                this.peso = peso;
+            }
+        }
+
+        const meuAluno = new Aluno('Seu Nome', 20, 70.5);
+
+        document.getElementById('output').innerHTML += 'Nome antes da alteração: ' + meuAluno.nome + '<br>';
+        document.getElementById('output').innerHTML += 'Idade antes da alteração: ' + meuAluno.idade + '<br>';
+        document.getElementById('output').innerHTML += 'Peso antes da alteração: ' + meuAluno.peso + '<br>';
+
+        meuAluno.nome = 'Novo Nome';
+        meuAluno.idade = 25;
+        meuAluno.peso = 75.2;
+
+        document.getElementById('output').innerHTML += 'Nome após a alteração: ' + meuAluno.nome + '<br>';
+        document.getElementById('output').innerHTML += 'Idade após a alteração: ' + meuAluno.idade + '<br>';
+        document.getElementById('output').innerHTML += 'Peso após a alteração: ' + meuAluno.peso + '<br>';
+
+    </script>
+
+</body>
+
+</html>
