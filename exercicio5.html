@@ -22,19 +22,20 @@
             }
         }
 
-        const meuAluno = new Aluno('Seu Nome', 20, 70.5);
+        const aluno = new Aluno("Seu nome");
 
-        document.getElementById('output').innerHTML += 'Nome antes da alteração: ' + meuAluno.nome + '<br>';
-        document.getElementById('output').innerHTML += 'Idade antes da alteração: ' + meuAluno.idade + '<br>';
-        document.getElementById('output').innerHTML += 'Peso antes da alteração: ' + meuAluno.peso + '<br>';
+        aluno.nome = "Pedro";
 
-        meuAluno.nome = 'Novo Nome';
-        meuAluno.idade = 25;
-        meuAluno.peso = 75.2;
+        aluno.idade = 20;
 
-        document.getElementById('output').innerHTML += 'Nome após a alteração: ' + meuAluno.nome + '<br>';
-        document.getElementById('output').innerHTML += 'Idade após a alteração: ' + meuAluno.idade + '<br>';
-        document.getElementById('output').innerHTML += 'Peso após a alteração: ' + meuAluno.peso + '<br>';
+        aluno.peso = 68.5;
+
+        console.log("Nome:", aluno.nome);
+
+        console.log("Idade:", aluno.idade);
+
+        console.log("Peso:", aluno.peso);
+
 
     </script>
 
